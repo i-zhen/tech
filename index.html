@@ -252,6 +252,16 @@
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script>
+    $(function () { 
+      jQuery.get("https://ipinfo.io/", function (response)
+      {
+        country = response.country;
+        if(country === 'CN')
+          $("#contact").hide();
+      }, "jsonp");      
+    });
+  </script>
 
   <!-- Custom scripts for this template -->
   <script src="js/stylish-portfolio.min.js"></script>
