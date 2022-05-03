@@ -389,8 +389,8 @@ header.main_header .logo {
 
 @media (min-width: 820px) {
 	header.main_header .logo {
-		width: 10.5vw; 
-	    /* max-width: 112px; */
+		width: 9.5vw; 
+	    max-width: 256px;
 		position: static;
 	}
 }
